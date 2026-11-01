@@ -15,7 +15,7 @@ Keep this note under ~120 lines. It answers one question: what is true about the
 
 - Создаем игру в роблоксе, чтобы максимально заработать и раскрутить ее
 - 2026-11-01: репозиторий игры `Ludosiellll/RobloxGame` создан, в `main` лежит каркас под Rojo с проверочными скриптами. Схема работы: [[40_Decisions/2026-11-01_Rojo_GitHub_Pipeline]].
-- 2026-11-01: ПК пользователя ещё не настроен (Git, Rokit, Rojo, плагин Studio). Настройку делает ИИ-агент на ПК по промпту из `docs/SETUP_PC.md`.
+- 2026-11-01: ПК настроен ИИ-агентом по `docs/SETUP_PC.md` (по его отчёту): Git 2.51.2, Rokit 1.2.0, Rojo 7.6.1, репозиторий в `D:\RobloxGameCode`, плагин Rojo подключён, `rojo build` проходит. Не подтверждено: строки `[Server]`/`[Client] Rojo работает` в Output после Play.
 - Жанр и концепция игры ещё не выбраны.
 
 ## Restrictions
@@ -28,7 +28,7 @@ Agents check this section before editing anything. Keep it explicit and dated.
 
 ## Next steps
 
-- Настроить ПК по `docs/SETUP_PC.md` и проверить: в Output после Play есть строки `[Server] Rojo работает` и `[Client] Rojo работает`.
+- Подтвердить синхронизацию: в Output после Play есть строки `[Server] Rojo работает` и `[Client] Rojo работает`.
 - Выбрать жанр и главную механику игры.
 
 ## Open questions

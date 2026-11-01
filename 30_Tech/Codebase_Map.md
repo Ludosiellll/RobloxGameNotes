@@ -16,7 +16,7 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 | Repository | Purpose | Location | Key commands |
 | --- | --- | --- | --- |
 | This workspace | Project context and AI OS | `D:\robloxgame` | `tools/check_agent_health.ps1`, `tools/check_ai_os_readiness.ps1`, `tools/sync_mgimind.ps1` |
-| Игра в роблоксе | Код игры на Luau, синхронизируется в Studio через Rojo | GitHub `Ludosiellll/RobloxGame`, ветка `main`; на ПК `D:\RobloxGameCode` (план) | `start.cmd`, `update.cmd`, `rojo serve`, `rokit install` |
+| Игра в роблоксе | Код игры на Luau, синхронизируется в Studio через Rojo | GitHub `Ludosiellll/RobloxGame`, ветка `main`; на ПК `D:\RobloxGameCode` | `start.cmd`, `update.cmd`, `rojo serve`, `rokit install` |
 
 ## Structure of the product repo
 
