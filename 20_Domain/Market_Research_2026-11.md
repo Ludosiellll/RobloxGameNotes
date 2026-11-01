@@ -1,0 +1,54 @@
+---
+type: domain
+status: active
+updated: 2026-11-01
+tags:
+  - domain/market
+  - project/strategy
+---
+
+# Рынок Roblox, ноябрь 2026
+
+## Summary
+
+Исследование 2026-11-01: какие новые игры Roblox зарабатывают больше всего и что из этого следует для нашей игры. Все цифры — оценки сторонних трекеров и СМИ, официальных данных о доходах игр Roblox не публикует. Сайты-трекеры (rowatcher.com, bloxrant.com, statroblox.com) напрямую не открылись — сеть облачного окружения их не пускает, данные взяты из выдачи поиска.
+
+## Факты (с датами и источниками)
+
+- Чарт Top Earning сортируется по Robux, потраченным за последние 7 дней. Копия чарта на ноябрь 2026 (bloxrant): RIVALS, Moped Drag, Steal An Egg, Blox Fruits, Anime Adventures, Adopt Me!.
+- Steal An Egg — вышла 2026-07-25, пик около 2,2 млн одновременных игроков (август 2026), №3 по доходу в октябре–ноябре. Жанр: тайкун/коллекция — красть и собирать яйца, вылуплять животных; сервер на 7 игроков; заимствует идеи Grow a Garden и Steal a Brainrot; регулярные ивенты (Halloween Dimension, октябрь 2026).
+- Animal Hospital (Anomaly) — вышла в мае 2026, пик около 1,2 млн (июль 2026), за 30 дней средний онлайн упал на 64% (трекер, октябрь 2026).
+- Брейнроты остывают: Steal a Brainrot — пик 25,8 млн (октябрь 2025), в 2026 на ~99% ниже пика (135–230 тыс. онлайн); Escape Tsunami For Brainrots была №1 в январе 2026, потом около 164 тыс.; мелкие копии брейнрот-игр быстро умирают.
+- Деньги сконцентрированы: топ-10 создателей в среднем по $65,7 млн, медиана — $1 500 (TweakTown); топ-500 игр получают около 60% всех выплат.
+- Реклама: по данным Roblox, все 5 самых новых игр, попавших в топ-20 по доходу, стартовали со Sponsored Experience ads; цена захода игрока — меньше $0,01 (заявление Roblox, лучший случай).
+- С 2026-06-08 курс DevEx повышен на 42% для трат взрослых (18+) пользователей из США с проверкой возраста — «чтобы стимулировать новые игры».
+- Графика: в Studio Assistant есть генерация 3D-объектов с текстурами по тексту (`/generate`, обновление апреля 2026).
+
+## Выводы (мнение Claude, 2026-11-01)
+
+- Делать брейнрот-игру поздно: мем-волна прошла пик год назад, копии не взлетают.
+- Работает не тема, а цикл: собрать ценное → поставить на базу → пассивный доход → улучшения/перерождения + социальный риск (у тебя могут отнять) + редкость и мутации + еженедельные ивенты.
+- Хиты 2026 живут 2–4 месяца на пике, потом падают. Зарабатывают на старте, поэтому нужны быстрый выход и частые обновления.
+- Шанс большого успеха низкий (медиана $1 500). Стратегия: дешёвый MVP за несколько недель → тест на маленьком рекламном бюджете → решение по метрикам (удержание D1, длина сессии, конверсия в покупку) → развивать или делать следующую игру.
+- Не копировать конкретную игру: нужна своя механика, а не смена темы.
+
+## Предложенные концепции
+
+См. обсуждение 2026-11-01 и [[10_Project/Current_Focus]]. Выбор жанра ждёт решения Дениса.
+
+## Источники
+
+- https://bloxrant.com/roblox-top-earning-games
+- https://statroblox.com/guides/how-much-do-roblox-games-make
+- https://www.sportskeeda.com/roblox-news/best-roblox-games-to-play-right-now
+- https://rowatcher.com/news/is-the-brainrot-trend-dying-what-ccu-data-from-three-top-games-reveals
+- https://www.tweaktown.com/news/113585/robloxs-top-10-creators-averaged-dollars65-7-million-each-while-the-median-made-dollars1500-and-roblox-everywhere-is-the-fix/index.html
+- https://devforum.roblox.com/t/ads-for-creators-rdc-recap-and-what%E2%80%99s-next/3929106
+- https://www.sec.gov/Archives/edgar/data/0001315098/000162828026068253/rblx-20260930.htm
+- https://machineherald-io.pages.dev/article/2026-04/27-roblox-studio-goes-agentic-with-planning-mode-mesh-generation-and-self-testing-ai-assistant
+
+## Links
+
+- [[20_Domain/Domain_Map]]
+- [[10_Project/Project_Brief]]
+- [[10_Project/Current_Focus]]

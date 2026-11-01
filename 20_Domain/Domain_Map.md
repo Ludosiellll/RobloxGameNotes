@@ -1,7 +1,7 @@
 ---
 type: domain
 status: draft
-updated: YYYY-MM-DD
+updated: 2026-11-01
 tags:
   - domain/map
 ---
@@ -12,8 +12,7 @@ The business domain of Игра в роблоксе: concepts, rules, scenarios,
 
 ## Core concepts
 
-- Concept 1 — what it means in this business, not in general.
-- Concept 2 — ...
+- Рынок и тренды Roblox на ноябрь 2026: [[20_Domain/Market_Research_2026-11]].
 
 ## Business rules
 

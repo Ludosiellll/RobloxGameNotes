@@ -20,6 +20,7 @@ The project map links goal, people, domain, technology, decisions and tasks. Add
 - [[01_Index/Glossary]]
 - [[01_Index/User_Working_Profile]]
 - [[20_Domain/Domain_Map]]
+- [[20_Domain/Market_Research_2026-11]]
 - [[30_Tech/Tech_Map]]
 - [[30_Tech/Codebase_Map]]
 - [[40_Decisions/Decision_Log]]
