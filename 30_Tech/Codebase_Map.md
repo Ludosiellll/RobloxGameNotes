@@ -29,6 +29,10 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 - `rokit.toml` — версия Rojo (`rojo-rbx/rojo@7.6.1`).
 - `start.cmd` — `git pull` + `rokit install` + `rojo serve`; `update.cmd` — только `git pull`.
 - `docs/SETUP_PC.md` — первая настройка ПК и промпт для ИИ-агента на компьютере пользователя.
+- `tools/gen_bricks.py` — генератор кирпичных моделей (блоки с пупырками) в `.glb` с цветами вершин; сетки `Body` и `Glow` (Glow → Neon + цвет редкости в игре).
+- `tools/vox.py`, `tools/vox2glb.py` — чтение/запись MagicaVoxel `.vox` и конвертация в кирпичный `.glb`; розовый `#FF00FF` = светящиеся кубики. Правила для моделей — `assets/vox/README.md`.
+- `tools/models/hero_meteor.py` — воксельный легендарный метеорит (`assets/vox/legendary_meteor.vox`).
+- Импорт `.glb` в Studio и сохранение цветов вершин ещё не проверены (2026-11-01).
 - `docs/superpowers/specs/2026-11-01-meteor-rain-mvp-design.md` — спецификация MVP: игровой процесс, модули, сохранение, защита, проверка.
 - Имена файлов: `*.server.luau` → Script, `*.client.luau` → LocalScript, `*.luau` → ModuleScript. Все скрипты с `--!strict`.
 
