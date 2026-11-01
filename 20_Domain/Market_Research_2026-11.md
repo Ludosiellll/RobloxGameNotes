@@ -24,6 +24,9 @@ tags:
 - С 2026-06-08 курс DevEx повышен на 42% для трат взрослых (18+) пользователей из США с проверкой возраста — «чтобы стимулировать новые игры».
 - Графика: в Studio Assistant есть генерация 3D-объектов с текстурами по тексту (`/generate`, обновление апреля 2026).
 
+- Реклама (официальная документация Ads Manager): 1 рекламный кредит = 263 Robux, минимальная покупка — 1 кредит; у кампаний на кредитах обязательна дата окончания, неистраченные кредиты возвращаются. Минимальный бюджет кампании в документации явно не указан (в старом посте DevForum 2023 года — 10 кредитов, по 5 в день минимум 2 дня). Сторонние блоги советуют от ~5 000 Robux в день на неделю — это мнение, не правило.
+- DevEx (официальная документация): от 13 лет и минимум 30 000 заработанных Robux. Ограничения по странам на официальной странице не найдены. Roblox блокировали в России в декабре 2025; по российским СМИ, блокировку сняли 2026-06-10. Работает ли вывод денег жителям России — официального ответа нет.
+
 ## Выводы (мнение Claude, 2026-11-01)
 
 - Делать брейнрот-игру поздно: мем-волна прошла пик год назад, копии не взлетают.
@@ -34,7 +37,7 @@ tags:
 
 ## Предложенные концепции
 
-См. обсуждение 2026-11-01 и [[10_Project/Current_Focus]]. Выбор жанра ждёт решения Дениса.
+Выбрана концепция «Метеоритный дождь»: [[40_Decisions/2026-11-01_Game_Concept_Meteor_Rain]].
 
 ## Источники
 
@@ -45,6 +48,9 @@ tags:
 - https://www.tweaktown.com/news/113585/robloxs-top-10-creators-averaged-dollars65-7-million-each-while-the-median-made-dollars1500-and-roblox-everywhere-is-the-fix/index.html
 - https://devforum.roblox.com/t/ads-for-creators-rdc-recap-and-what%E2%80%99s-next/3929106
 - https://www.sec.gov/Archives/edgar/data/0001315098/000162828026068253/rblx-20260930.htm
+- https://create.roblox.com/docs/production/promotion/ads-manager
+- https://create.roblox.com/docs/production/monetization/developer-exchange
+- https://companies.rbc.ru/news/Plu2w7Pife/robloks-razblokirovali-v-rossii-chto-izmenilos/
 - https://machineherald-io.pages.dev/article/2026-04/27-roblox-studio-goes-agentic-with-planning-mode-mesh-generation-and-self-testing-ai-assistant
 
 ## Links

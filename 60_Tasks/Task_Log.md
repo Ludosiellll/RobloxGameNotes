@@ -13,7 +13,8 @@ Single place for tasks, questions and follow-ups that matter for context. Keep A
 ## Active
 
 - [ ] 2026-11-01: подтвердить синхронизацию Rojo: после Play в Output есть `[Server] Rojo работает` и `[Client] Rojo работает`.
-- [ ] 2026-11-01: выбрать жанр, главную механику и способ монетизации игры.
+- [ ] 2026-11-01: дизайн MVP «Метеоритного дождя» → спецификация → план реализации.
+- [ ] 2026-11-01: проверить, доступен ли Денису вывод Robux через DevEx.
 - [ ] Fill the four seed notes (Project_Brief, Current_Focus, Tech_Map, People) — see TEMPLATE_SETUP.
 - [ ] Run baseline behavior evals E01/E05/E13 in fresh agent sessions and record results in [[70_Resources/AI_OS_Eval_Run_Log]].
 - [ ] Decide on workspace backup/remote (private git remote or scheduled backup) — a single local copy of the source of truth is a real risk.

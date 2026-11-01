@@ -25,6 +25,7 @@ The project map links goal, people, domain, technology, decisions and tasks. Add
 - [[30_Tech/Codebase_Map]]
 - [[40_Decisions/Decision_Log]]
 - [[40_Decisions/2026-11-01_Rojo_GitHub_Pipeline]]
+- [[40_Decisions/2026-11-01_Game_Concept_Meteor_Rain]]
 - [[50_Meetings/Meeting_Log]]
 - [[60_Tasks/Task_Log]]
 - [[60_Tasks/System_Proposals]]
