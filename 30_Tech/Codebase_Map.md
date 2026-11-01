@@ -1,7 +1,7 @@
 ---
 type: tech
 status: active
-updated: YYYY-MM-DD
+updated: 2026-11-01
 tags:
   - tech/codebase
   - ai/context
@@ -16,23 +16,33 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 | Repository | Purpose | Location | Key commands |
 | --- | --- | --- | --- |
 | This workspace | Project context and AI OS | `D:\robloxgame` | `tools/check_agent_health.ps1`, `tools/check_ai_os_readiness.ps1`, `tools/sync_mgimind.ps1` |
-| Игра в роблоксе | Product code | `none yet` | e.g. `docker compose up --build`, `pytest` |
+| Игра в роблоксе | Код игры на Luau, синхронизируется в Studio через Rojo | GitHub `Ludosiellll/RobloxGame`, ветка `main`; на ПК `D:\RobloxGameCode` (план) | `start.cmd`, `update.cmd`, `rojo serve`, `rokit install` |
 
 ## Structure of the product repo
 
-- `backend/` — ...
-- `frontend/` — ...
-- Record the three things future agents always need: entry points, test commands, known gotchas.
+Проверено на коммите `a2a00e2` (2026-11-01).
+
+- `default.project.json` — раскладка Rojo. Rojo управляет только тремя папками:
+  - `src/shared` → `ReplicatedStorage.Shared` (модули для сервера и клиента), `Config.luau` — версия проекта;
+  - `src/server` → `ServerScriptService.Server`, точка входа `Main.server.luau`;
+  - `src/client` → `StarterPlayer.StarterPlayerScripts.Client`, точка входа `Main.client.luau`.
+- `rokit.toml` — версия Rojo (`rojo-rbx/rojo@7.6.1`).
+- `start.cmd` — `git pull` + `rokit install` + `rojo serve`; `update.cmd` — только `git pull`.
+- `docs/SETUP_PC.md` — первая настройка ПК и промпт для ИИ-агента на компьютере пользователя.
+- Имена файлов: `*.server.luau` → Script, `*.client.luau` → LocalScript, `*.luau` → ModuleScript. Все скрипты с `--!strict`.
 
 ## Commands
 
-- Run: ...
-- Tests: ...
-- Build: ...
+- Запуск синхронизации (на ПК пользователя): `start.cmd`, затем в Studio Plugins → Rojo → Connect.
+- Забрать новые изменения: `update.cmd`.
+- Проверка сборки: `rojo build default.project.json -o build/check.rbxlx`.
+- Тесты: автотестов пока нет. Проверка идёт вручную: Play в Studio и текст из окна Output.
 
 ## Gotchas / known failure modes
 
-- Example shape: "YYYY-MM-DD: the first run without a filled `.env` fails on required secrets — intended behavior."
+- 2026-11-01: всё, что создано вручную в Studio внутри папок Shared/Server/Client, Rojo удалит при синхронизации. Правки скриптов делаются только в репозитории.
+- 2026-11-01: Rojo не трогает Workspace и другие места вне трёх папок — карту пользователь строит в Studio сам.
+- 2026-11-01: на ПК папка `D:\robloxgame` уже занята этим репозиторием заметок. Код игры клонировать в другую папку (Windows не различает регистр имён).
 - Capture verified bug patterns here after each diagnosis (see [[70_Resources/Procedure_Bug_Diagnosis_Loop]]).
 
 ## AI OS tools (this workspace)

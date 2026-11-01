@@ -12,23 +12,25 @@ Technical map of Игра в роблоксе: architecture, components, integra
 
 ## Architecture
 
-- Working architecture (e.g. API + database + SPA + background workers).
-- Mark clearly what is confirmed versus what is a draft to validate with the team.
+- 2026-11-01, подтверждено: код игры живёт в GitHub `Ludosiellll/RobloxGame`, Rojo синхронизирует его в Roblox Studio на Windows-ПК пользователя. Решение: [[40_Decisions/2026-11-01_Rojo_GitHub_Pipeline]].
+- Claude работает в облачной сессии: пишет код и пушит в `main`. Доступа к Studio и к `apis.roblox.com` у него нет (сетевая политика окружения блокирует домен).
+- Карта, освещение и прочее вне папок скриптов собираются в Studio вручную и публикуются через File → Publish to Roblox.
 
 ## Main components
 
-- Component 1 — purpose.
-- Component 2 — ...
+- Roblox Studio — редактор и публикация игры (только Windows/Mac).
+- Rojo 7.6.1 (ставится через Rokit) — синхронизация файлов `.luau` из репозитория в Studio, одностороння.
+- GitHub — хранение кода и канал передачи изменений от Claude к ПК пользователя.
 
 ## Integrations
 
-- External API 1: access model (sandbox/read-only/production), status.
-- Record what each integration can and cannot provide — API facts versus business methodology.
+- Roblox Open Cloud API: не подключён. API-ключа нет; `apis.roblox.com` заблокирован в сети облачного окружения (2026-11-01). Понадобится, только если захотим публиковать плейс без Studio.
+- Roblox Studio MCP: не используется — работает только локально на ПК со Studio, из облачной сессии недоступен.
 
 ## Environments
 
-- Local: how to run it.
-- Staging/Prod: where they live, who has access.
+- Локально: Windows-ПК пользователя со Studio, синхронизация через `start.cmd` (см. [[30_Tech/Codebase_Map]]).
+- Прод: опубликованная игра Roblox. Universe ID и Place ID пока не известны.
 
 ## Tools
 

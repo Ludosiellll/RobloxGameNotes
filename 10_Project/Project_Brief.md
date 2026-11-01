@@ -35,7 +35,7 @@ tags:
 
 ## Where truth lives
 
-- Code: `none yet`
+- Code: GitHub `Ludosiellll/RobloxGame`, ветка `main` (см. [[30_Tech/Codebase_Map]]).
 - Documentation: links or paths to specs/requirements documents.
 - Task tracker: link or "this workspace, [[60_Tasks/Task_Log]]".
 - Communications: where decisions actually happen (calls, chats) and how they get captured here.

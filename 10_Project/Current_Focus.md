@@ -14,27 +14,30 @@ Keep this note under ~120 lines. It answers one question: what is true about the
 ## Now
 
 - Создаем игру в роблоксе, чтобы максимально заработать и раскрутить ее
-- Example: real data source X connected; sources Y and Z still demo.
+- 2026-11-01: репозиторий игры `Ludosiellll/RobloxGame` создан, в `main` лежит каркас под Rojo с проверочными скриптами. Схема работы: [[40_Decisions/2026-11-01_Rojo_GitHub_Pipeline]].
+- 2026-11-01: ПК пользователя ещё не настроен (Git, Rokit, Rojo, плагин Studio). Настройку делает ИИ-агент на ПК по промпту из `docs/SETUP_PC.md`.
+- Жанр и концепция игры ещё не выбраны.
 
 ## Restrictions
 
 Agents check this section before editing anything. Keep it explicit and dated.
 
-- Example: FREEZE until YYYY-MM-DD — do not modify application code/UI without explicit new permission from Денис; workspace notes and review-only analysis are allowed.
-- Example: never store secrets in notes; production credentials only in environment/secret managers.
+- 2026-11-01: агенты работают только в репозиториях `Ludosiellll/RobloxGame` и `Ludosiellll/RobloxGameNotes` (указание Дениса).
+- Скрипты из папок Shared/Server/Client правятся только в репозитории, не в Studio.
+- Никаких ключей и токенов (Roblox Open Cloud и др.) в заметках и в репозиториях.
 
 ## Next steps
 
-- Example: deploy current branch per [[70_Resources/Procedure_Deploy_Template]].
-- Example: clarify data methodology for category X with n/a.
+- Настроить ПК по `docs/SETUP_PC.md` и проверить: в Output после Play есть строки `[Server] Rojo работает` и `[Client] Rojo работает`.
+- Выбрать жанр и главную механику игры.
 
 ## Open questions
 
-- Example: which data sources are mandatory for the first release?
+- Какой жанр и главная механика? Как игра будет зарабатывать (геймпассы, developer products, премиум-выплаты)?
 
 ## Blockers
 
-- Example: waiting for API access from the client's tech lead.
+- Нет блокеров.
 
 ## Links
 

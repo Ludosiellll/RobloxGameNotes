@@ -24,6 +24,7 @@ This note is the main entry point for Claude, Codex, Cursor and other assistants
 Keep this list short (10-20 dated bullets max). Newest facts on top of their topic; prune superseded lines during weekly maintenance.
 
 - Project: Игра в роблоксе for n/a / n/a. Example: "MVP of an internal analytics tool; scope agreed on YYYY-MM-DD".
+- 2026-11-01: код игры в `Ludosiellll/RobloxGame`, синхронизация в Studio через Rojo; Claude работает из облака без доступа к Studio. См. [[40_Decisions/2026-11-01_Rojo_GitHub_Pipeline]].
 - User: Денис operates the AI agents in this workspace; working preferences: [[01_Index/User_Working_Profile]].
 - The main goal of this workspace: find context fast and keep a connected knowledge graph.
 - YYYY-MM-DD: the workspace runs as a layered AI operating system: this vault is the canonical source of truth, a semantic memory index is an optional retrieval layer, agents follow recall -> read -> challenge -> act -> verify -> capture. Shared protocol: [[70_Resources/Agent_Workflow_Protocol]]. Memory runbook: [[70_Resources/MGI_Mind_Local_Setup_Template]].
