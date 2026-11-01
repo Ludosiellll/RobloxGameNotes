@@ -29,6 +29,7 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 - `rokit.toml` — версия Rojo (`rojo-rbx/rojo@7.6.1`).
 - `start.cmd` — `git pull` + `rokit install` + `rojo serve`; `update.cmd` — только `git pull`.
 - `docs/SETUP_PC.md` — первая настройка ПК и промпт для ИИ-агента на компьютере пользователя.
+- `docs/superpowers/specs/2026-11-01-meteor-rain-mvp-design.md` — спецификация MVP: игровой процесс, модули, сохранение, защита, проверка.
 - Имена файлов: `*.server.luau` → Script, `*.client.luau` → LocalScript, `*.luau` → ModuleScript. Все скрипты с `--!strict`.
 
 ## Commands
