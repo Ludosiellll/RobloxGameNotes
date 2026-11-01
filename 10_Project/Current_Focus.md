@@ -33,6 +33,7 @@ Agents check this section before editing anything. Keep it explicit and dated.
 
 ## Open questions
 
+- Готов ли аккаунт Дениса к публикации: верификация ID, 2FA, 1 000 Robux возвратного взноса (или 2 месяца Premium)? См. [[20_Domain/Market_Research_2026-11]].
 - Может ли Денис выводить Robux через DevEx из своей страны? Официального ответа для России не найдено (2026-11-01).
 
 ## Blockers
