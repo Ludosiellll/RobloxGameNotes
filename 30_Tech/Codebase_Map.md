@@ -1,7 +1,7 @@
 ---
 type: tech
 status: active
-updated: 2026-11-01
+updated: 2026-11-06
 tags:
   - tech/codebase
   - ai/context
@@ -33,6 +33,10 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 - `src/shared/Rarity.luau` (6 редкостей, 5 мутаций), `src/shared/Zones.luau` (17 зон, ворота `max(0, i−4)` перерождений, веса редкостей), `src/shared/Catalog/Creatures.luau` (63 брейнрота; «69» исключён из-за модерации), `src/shared/Config.luau` (все числа). `tools/check_catalog.py` сверяет каталог с `assets/packs/Brainrots.rbxm`.
 - `src/shared/Roll.luau` (броски редкости/мутации/существа с удачей), `src/shared/Formulas.luau` (доход, офлайн, переноска, замена слабого, толчок, скорость, формат денег), `src/shared/DataSchema.luau` (сохранение v1: default/migrate/sanitize/addReceipt), `src/shared/SessionLock.luau` (take/wait/steal), `src/shared/AnimSampler.luau` (кадры и смягчения).
 - `src/shared/CraterLayout.luau` — геометрия кратера (профиль высот, зоны по кольцам/секторам, дамбы, ядро, случайные точки в зоне, базы, спуски, гейзеры); числа в `Config.Crater`. `src/studio/CraterBuilder.luau` → `ServerStorage.StudioTools.CraterBuilder`: собирает чашу из Terrain и раскладывает декор биомов по дугам; запуск из Command Bar, инструкция `docs/ASSET_SETUP.md`.
+- Раскладка Rojo (2026-11-06, коммит `921a8a1`): кроме трёх папок кода ещё `assets/vfx` → `ReplicatedStorage.VFX` (эффекты без скриптов), `tests` → `ServerScriptService.Tests`, `assets/packs` → `ServerStorage.Packs` (брейнроты), `src/studio` → `ServerStorage.StudioTools`. Вручную Денис кладёт `ReplicatedStorage.Packs` (FireballVFX, WeatherVFX, по желанию MeteorRock) — Rojo эту папку не трогает. Объекты игры создаются в `workspace.Runtime`.
+- Сервер (`src/server/Main.server.luau` запускает по очереди, ошибка одного не роняет остальные): `Services/PlayerData` (сохранение с блокировкой сессии; без API или GameId=0 — режим памяти), `Services/AssetCheck` (печатает `[Assets] OK/MISSING`, отдаёт модели из паков), `Services/DebugService` (команды только в Studio: `money`, `rebirths`, `speed`, `reset`, `list`; другие сервисы добавляют свои через `register`), `Services/MapService` (зона по координатам, точки падения, места баз, появление на базе, возврат из закрытых зон, команды `zone`, `tp <1-17>`; при касании гейзера ставит атрибут `LaunchedAt`). Каналы связи — `src/shared/Remotes.luau` (сервер создаёт все при старте).
+- Клиент (`src/client/Main.client.luau`): `Controllers/Gates` (свои стены ворот по атрибуту `Rebirths`, расчёт `CraterLayout.gateWalls`), `Controllers/Geysers` (полёт по дуге на ярус выше через LinearVelocity), `Controllers/DebugPanel` (кнопка DEBUG).
+- Атрибут игрока `Rebirths` пока ставят только отладочные команды; при загрузке сохранения его, `Money` и `Income` будет ставить задача 11 (базы и доход).
 - `node tools/luau-test/check-syntax.mjs` — компилирует все `.luau` (ловит синтаксические ошибки в коде только для Roblox).
 - План этапа 1 и журнал выполнения: `docs/superpowers/plans/2026-11-06-stage1-core.md`, `.superpowers/sdd/2026-11-06-stage1-core/progress.md` (журнал не в git).
 - `tools/gen_bricks.py` — генератор кирпичных моделей (блоки с пупырками) в `.glb` с цветами вершин; сетки `Body` и `Glow` (Glow → Neon + цвет редкости в игре).
@@ -47,13 +51,14 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 - Запуск синхронизации (на ПК пользователя): `start.cmd`, затем в Studio Plugins → Rojo → Connect.
 - Забрать новые изменения: `update.cmd`.
 - Проверка сборки: `rojo build default.project.json -o build/check.rbxlx`.
-- Тесты: автотестов пока нет. Проверка идёт вручную: Play в Studio и текст из окна Output.
+- Тесты у агента: `node tools/luau-test/run.mjs` (76 тестов на 2026-11-06) и `node tools/luau-test/check-syntax.mjs`. В Studio: Play → строка `[Tests] X passed, Y failed` в Output.
 
 ## Gotchas / known failure modes
 
 - 2026-11-01: всё, что создано вручную в Studio внутри папок Shared/Server/Client, Rojo удалит при синхронизации. Правки скриптов делаются только в репозитории.
 - 2026-11-01: Rojo не трогает Workspace и другие места вне трёх папок — карту пользователь строит в Studio сам.
 - 2026-11-01: на ПК папка `D:\robloxgame` уже занята этим репозиторием заметок. Код игры клонировать в другую папку (Windows не различает регистр имён).
+- 2026-11-06: luau-web не понимает тип возврата `(number, number)?` — пишем `(number?, number?)`; ловит `check-syntax.mjs`.
 - Capture verified bug patterns here after each diagnosis (see [[70_Resources/Procedure_Bug_Diagnosis_Loop]]).
 
 ## AI OS tools (this workspace)
