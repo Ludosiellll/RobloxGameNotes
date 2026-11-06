@@ -20,6 +20,7 @@ Registry of decisions. Every significant decision gets its own note in this fold
 | 2026-11-06 | Расширенная версия сразу: трасса миров из биомов старого проекта, существа-брейнроты в метеоритах, питомцы, дорожки, перерождение, шторм, Folk Stud UI; 5 этапов | accepted | спецификация в `RobloxGame/docs/superpowers/specs/2026-11-06-meteor-rain-expanded-design.md` |
 | 2026-11-06 | Анимации игрока делаем сами в коде (KeyframeSequence R15) и публикуем под аккаунтом Дениса; чужие анимации из файлов игр не работают (только ссылки) | accepted | `docs/ANIMATIONS.md` в `RobloxGame` |
 | 2026-11-06 | Дамбы к ядру на 67.5° и 247.5° (середина секторов кольца 3, мимо гейзеров), закреплено тестом | accepted | `tests/CraterLayout.spec.luau` в `RobloxGame` |
+| 2026-11-06 | Экономика — чистые функции `Economy` с тестами, сервер только проверяет и вызывает; окна строит кит Folk Stud во время игры; продажа и лидерборды на каждой базе (базы далеко друг от друга); индекс по редкостям | accepted | `docs/superpowers/plans/2026-11-06-stage2-economy-ui.md` в `RobloxGame` |
 
 ## Rule
 
