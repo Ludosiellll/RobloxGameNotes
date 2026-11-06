@@ -21,6 +21,8 @@ Registry of decisions. Every significant decision gets its own note in this fold
 | 2026-11-06 | Анимации игрока делаем сами в коде (KeyframeSequence R15) и публикуем под аккаунтом Дениса; чужие анимации из файлов игр не работают (только ссылки) | accepted | `docs/ANIMATIONS.md` в `RobloxGame` |
 | 2026-11-06 | Дамбы к ядру на 67.5° и 247.5° (середина секторов кольца 3, мимо гейзеров), закреплено тестом | accepted | `tests/CraterLayout.spec.luau` в `RobloxGame` |
 | 2026-11-06 | Экономика — чистые функции `Economy` с тестами, сервер только проверяет и вызывает; окна строит кит Folk Stud во время игры; продажа и лидерборды на каждой базе (базы далеко друг от друга); индекс по редкостям | accepted | `docs/superpowers/plans/2026-11-06-stage2-economy-ui.md` в `RobloxGame` |
+| 2026-11-06 | Кратер уменьшен в 2.5 раза (`Config.Crater.Scale = 0.4`) после первой проверки Дениса «карта огромная»; равнина у баз — земля, декоративная трава Terrain выключена | accepted | `src/shared/Config.luau` в `RobloxGame` |
+| 2026-11-06 | Большие модели (брейнроты, 17 биомов) вставляются в Studio вручную через Insert from File: Rojo в режиме serve не задаёт сетки MeshPart и Union | accepted | `docs/ASSET_SETUP.md` в `RobloxGame` |
 
 ## Rule
 
