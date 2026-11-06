@@ -38,7 +38,7 @@ Agents check this section before editing anything. Keep it explicit and dated.
 
 ## Blockers
 
-- Нет блокеров.
+- 2026-11-06: оба репозитория (`RobloxGame`, `RobloxGameNotes`) публичные. Рекомендовано сделать приватными до загрузки платных паков и чужих ассетов: их нельзя публиковать, а код игры могут скопировать.
 
 ## Links
 
