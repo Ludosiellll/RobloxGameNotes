@@ -35,6 +35,7 @@ Replace the examples with what is true for you:
 - Which agents are in use (e.g. Claude Code, Codex, Cursor) and which one is primary.
 - Cost/token sensitivity: when heavy models are acceptable.
 - Preferred verification style: tests, screenshots, smoke checks.
+- 2026-11-06: Денис пользуется только веб-версией Claude (claude.ai). Claude Code и приложение на ПК ему недоступны, поэтому вариант «агент на ПК + Studio MCP» отпал. Предлагать только то, что работает из облачной сессии или делается руками в Studio и в браузере.
 
 ## Risk Sensitivities
 
