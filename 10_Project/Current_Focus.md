@@ -25,6 +25,7 @@ Agents check this section before editing anything. Keep it explicit and dated.
 - 2026-11-01: агенты работают только в репозиториях `Ludosiellll/RobloxGame` и `Ludosiellll/RobloxGameNotes` (указание Дениса).
 - Скрипты из папок Shared/Server/Client правятся только в репозитории, не в Studio.
 - Никаких ключей и токенов (Roblox Open Cloud и др.) в заметках и в репозиториях.
+- 2026-11-06: оба репозитория остаются публичными — решение Дениса, риск (утечка кода и платных ассетов) озвучен. Большие исходные ассеты передаются через черновик релиза `raw-assets` в `RobloxGame`, в git попадает только то, что используется в игре.
 
 ## Next steps
 
@@ -38,7 +39,7 @@ Agents check this section before editing anything. Keep it explicit and dated.
 
 ## Blockers
 
-- 2026-11-06: оба репозитория (`RobloxGame`, `RobloxGameNotes`) публичные. Рекомендовано сделать приватными до загрузки платных паков и чужих ассетов: их нельзя публиковать, а код игры могут скопировать.
+- Нет блокеров.
 
 ## Links
 
