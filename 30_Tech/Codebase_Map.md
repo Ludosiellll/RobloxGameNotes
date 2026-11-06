@@ -59,6 +59,7 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 - 2026-11-01: Rojo не трогает Workspace и другие места вне трёх папок — карту пользователь строит в Studio сам.
 - 2026-11-01: на ПК папка `D:\robloxgame` уже занята этим репозиторием заметок. Код игры клонировать в другую папку (Windows не различает регистр имён).
 - 2026-11-06: luau-web не понимает тип возврата `(number, number)?` — пишем `(number?, number?)`; ловит `check-syntax.mjs`.
+- 2026-11-06: анимация в чужом файле игры — обычно только ссылка `AnimationId` на аккаунт автора; в нашей игре Roblox её не запустит. Годится сама анимация (`KeyframeSequence`, часто в папке `AnimSaves`): её играет наш проигрыватель или Денис публикует под своим аккаунтом. Передача прав на анимацию через Creator Hub (Permissions → Experiences) упоминается на DevForum, но не проверена. В паке брейнротов у каждой модели уже есть `Idle` и `Walk` (128 KeyframeSequence на 64 модели).
 - Capture verified bug patterns here after each diagnosis (see [[70_Resources/Procedure_Bug_Diagnosis_Loop]]).
 
 ## AI OS tools (this workspace)

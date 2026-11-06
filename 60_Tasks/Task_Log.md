@@ -23,6 +23,7 @@ Single place for tasks, questions and follow-ups that matter for context. Keep A
 
 ## Waiting
 
+- [ ] 2026-11-06: Денис попросит друзей прислать копии их игр (с их согласия) — берём анимации игрока (переноска, толчок, бросок, празднование, танцы), звуки, эффекты. Проверка на бэкдоры, только объекты без скриптов.
 - [ ] Example: waiting for repository access from the client.
 
 ## Done
