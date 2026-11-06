@@ -66,6 +66,8 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 - 2026-11-06: дамбы к ядру должны идти по середине сектора кольца 3 и мимо гейзеров ядра — на это есть тест в `CraterLayout.spec`; после смены углов в `Config.Crater.Paths` кратер надо пересобрать в Studio.
 - 2026-11-06: BindableEvent копирует таблицы в аргументах — изменения сохранения через него теряются. Для слушателей загрузки — `PlayerData.onLoaded`.
 - 2026-11-06: проверка перемещения при переноске идёт перед доставкой (`Formulas.moveAllowed`), иначе телепорт на базу засчитывался.
+- 2026-11-06: Rojo (serve) не может задать плагином сетки MeshPart, Union-данные и `Capabilities` — отсюда были 252 355 «непримененных» изменений. Решение: через Rojo идут скрипты и паки без сеток в XML (`tools/rbxl_to_rbxmx.py` — точная копия, свойства по умолчанию не пишутся); модели с сетками (брейнроты, питомцы, биомы) — один раз Insert from File (`docs/ASSET_SETUP.md`).
+- 2026-11-06: Rojo 7.6.1 не читает `Tags`, сохранённые новой Studio как SharedString; `tools/rbxm_props.py strip` убирает такие свойства из .rbxm.
 - Capture verified bug patterns here after each diagnosis (see [[70_Resources/Procedure_Bug_Diagnosis_Loop]]).
 
 ## AI OS tools (this workspace)
