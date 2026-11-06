@@ -16,7 +16,7 @@ Keep this note under ~120 lines. It answers one question: what is true about the
 - Создаем игру в роблоксе, чтобы максимально заработать и раскрутить ее
 - 2026-11-01: репозиторий игры `Ludosiellll/RobloxGame` создан, в `main` лежит каркас под Rojo с проверочными скриптами. Схема работы: [[40_Decisions/2026-11-01_Rojo_GitHub_Pipeline]].
 - 2026-11-01: ПК настроен ИИ-агентом по `docs/SETUP_PC.md` (по его отчёту): Git 2.51.2, Rokit 1.2.0, Rojo 7.6.1, репозиторий в `D:\RobloxGameCode`, плагин Rojo подключён, `rojo build` проходит. Не подтверждено: строки `[Server]`/`[Client] Rojo работает` в Output после Play.
-- 2026-11-01: проведено исследование рынка ([[20_Domain/Market_Research_2026-11]]). Вывод: брейнроты остывают, берём проверенный цикл «собрать → база → доход → риск кражи» со своей механикой. Выбрана концепция «Метеоритный дождь»: [[40_Decisions/2026-11-01_Game_Concept_Meteor_Rain]]. Дизайн MVP согласован по частям; спецификация `docs/superpowers/specs/2026-11-01-meteor-rain-mvp-design.md` в `Ludosiellll/RobloxGame` ждёт проверки Дениса.
+- 2026-11-01: проведено исследование рынка ([[20_Domain/Market_Research_2026-11]]). Вывод: брейнроты остывают, берём проверенный цикл «собрать → база → доход → риск кражи» со своей механикой. Выбрана концепция «Метеоритный дождь»: [[40_Decisions/2026-11-01_Game_Concept_Meteor_Rain]]. 2026-11-06: Денис решил строить расширенную версию сразу, используя все подходящие ассеты (опись: `docs/assets/INVENTORY.md` в `RobloxGame`), локации большие. Спецификация `docs/superpowers/specs/2026-11-06-meteor-rain-expanded-design.md` ждёт проверки; первая (MVP) заменена.
 
 ## Restrictions
 

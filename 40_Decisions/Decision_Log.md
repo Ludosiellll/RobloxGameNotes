@@ -16,6 +16,7 @@ Registry of decisions. Every significant decision gets its own note in this fold
 | YYYY-MM-DD | Use this workspace as the canonical source of truth for AI agents; memory layers are retrieval only | accepted | (create an ADR from the template) |
 | 2026-11-01 | Код игры в GitHub, синхронизация в Studio через Rojo | accepted | [[40_Decisions/2026-11-01_Rojo_GitHub_Pipeline]] |
 | 2026-11-01 | Концепция игры: «Метеоритный дождь» | accepted | [[40_Decisions/2026-11-01_Game_Concept_Meteor_Rain]] |
+| 2026-11-06 | Расширенная версия сразу: трасса миров из биомов старого проекта, существа-брейнроты в метеоритах, питомцы, дорожки, перерождение, шторм, Folk Stud UI; 5 этапов | accepted | спецификация в `RobloxGame/docs/superpowers/specs/2026-11-06-meteor-rain-expanded-design.md` |
 
 ## Rule
 
