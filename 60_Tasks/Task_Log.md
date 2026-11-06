@@ -16,7 +16,7 @@ Single place for tasks, questions and follow-ups that matter for context. Keep A
 - [ ] 2026-11-06: ауры и аксессуары из THRESHOLD и Barber RNG — в магазин за Robux и награды за перерождения (этап монетизации).
 - [ ] 2026-11-01: подтвердить синхронизацию Rojo: после Play в Output есть `[Server] Rojo работает` и `[Client] Rojo работает`.
 - [ ] 2026-11-06: проверка этапа 2 в Studio по `docs/CHECKLIST_STAGE2.md`.
-- [ ] 2026-11-06: отложенные мелочи обзора этапа 1 (12 пунктов в журнале `.superpowers/sdd/2026-11-06-stage1-core/progress.md`, строки `Final: minor`).
+- [ ] 2026-11-06: отложенные мелочи обзоров этапов 1 и 2 (строки `Final: minor` в журналах `.superpowers/sdd/*/progress.md` репозитория игры).
 - [ ] 2026-11-06: план этапа 3 — яйца, питомцы, беговые дорожки.
 - [ ] 2026-11-06: проверка этапа 1 в Studio по `docs/CHECKLIST_STAGE1.md` (кратер пересобрать).
 - [ ] 2026-11-06: пак SFX не загружен и не разобран.
