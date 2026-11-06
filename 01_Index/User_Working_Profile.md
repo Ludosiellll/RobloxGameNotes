@@ -23,6 +23,7 @@ Replace the examples with what is true for you:
 - Expects the agent to argue against bad decisions once, to the point, with reasons.
 - Values speed, but not at the cost of verifying critical facts, security, or result quality.
 - Prefers the agent to take reasonable steps autonomously rather than stopping at suggestions.
+- 2026-11-06: Денис отменил согласование задач: «делай все задачи без остановки, не спрашивая и будущие тоже». Задачи плана выполняются подряд без описания и ожидания «ок»; Денису отчёт по итогам и список проверок в Studio. Остановиться можно только перед необратимым или опасным действием.
 
 ## Design Preferences (if the project has UI)
 
