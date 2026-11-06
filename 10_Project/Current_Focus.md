@@ -18,6 +18,9 @@ Keep this note under ~120 lines. It answers one question: what is true about the
 - 2026-11-01: ПК настроен ИИ-агентом по `docs/SETUP_PC.md` (по его отчёту): Git 2.51.2, Rokit 1.2.0, Rojo 7.6.1, репозиторий в `D:\RobloxGameCode`, плагин Rojo подключён, `rojo build` проходит. Не подтверждено: строки `[Server]`/`[Client] Rojo работает` в Output после Play.
 - 2026-11-01: проведено исследование рынка ([[20_Domain/Market_Research_2026-11]]). Вывод: брейнроты остывают, берём проверенный цикл «собрать → база → доход → риск кражи» со своей механикой. Выбрана концепция «Метеоритный дождь»: [[40_Decisions/2026-11-01_Game_Concept_Meteor_Rain]]. 2026-11-06: Денис решил строить расширенную версию сразу, используя все подходящие ассеты (опись: `docs/assets/INVENTORY.md` в `RobloxGame`), локации большие. Спецификация `docs/superpowers/specs/2026-11-06-meteor-rain-expanded-design.md` ждёт проверки; первая (MVP) заменена.
 
+- 2026-11-06: идёт этап 1 по плану `docs/superpowers/plans/2026-11-06-stage1-core.md` (16 задач). Готово: задача 1 (тесты), задача 2 (редкости, мутации, 17 зон, каталог 63 существ, конфиг). Перед каждой задачей Claude описывает её Денису и ждёт «ок» или правок.
+- 2026-11-06: форма карты пересматривается — Денис считает «трассу из биомов» заезженной. Варианты предложены, ждём выбора до задачи 9 (карта).
+
 ## Restrictions
 
 Agents check this section before editing anything. Keep it explicit and dated.
