@@ -19,6 +19,9 @@ Registry of decisions. Every significant decision gets its own note in this fold
 | 2026-11-06 | Карта — гигантский кратер: 8 баз на краю, 3 кольца секторов-биомов, ров с двумя дамбами, ядро Nuclear Core; вниз — спуски, вверх — гейзеры (удобно для телефона). Трасса и архипелаг отклонены | accepted | спецификация, раздел 2 |
 | 2026-11-06 | Расширенная версия сразу: трасса миров из биомов старого проекта, существа-брейнроты в метеоритах, питомцы, дорожки, перерождение, шторм, Folk Stud UI; 5 этапов | accepted | спецификация в `RobloxGame/docs/superpowers/specs/2026-11-06-meteor-rain-expanded-design.md` |
 
+| 2026-11-06 | Анимации игрока делаем сами в коде (KeyframeSequence R15) и публикуем под аккаунтом Дениса; чужие анимации из файлов игр не работают (только ссылки) | accepted | `docs/ANIMATIONS.md` в `RobloxGame` |
+| 2026-11-06 | Дамбы к ядру на 67.5° и 247.5° (середина секторов кольца 3, мимо гейзеров), закреплено тестом | accepted | `tests/CraterLayout.spec.luau` в `RobloxGame` |
+
 ## Rule
 
 Record a decision if it:
