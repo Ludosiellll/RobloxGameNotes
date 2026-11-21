@@ -13,6 +13,7 @@ The business domain of Игры для Яндекс Игр: concepts, rules, sce
 ## Core concepts
 
 - Яндекс Игры: каталог HTML5-игр в браузере; разработчик получает долю дохода от рекламы и покупок. Требования модерации — `docs/PUBLISH.md` в `RobloxGame`.
+- Рынок Яндекс Игр на ноябрь 2026: [[20_Domain/Yandex_Games_Market_2026-11]].
 - Архив: рынок Roblox на ноябрь 2026 — [[20_Domain/Market_Research_2026-11]].
 
 ## Business rules
