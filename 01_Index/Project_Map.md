@@ -20,13 +20,15 @@ The project map links goal, people, domain, technology, decisions and tasks. Add
 - [[01_Index/Glossary]]
 - [[01_Index/User_Working_Profile]]
 - [[20_Domain/Domain_Map]]
-- [[20_Domain/Market_Research_2026-11]]
-- [[20_Domain/Asset_Sources]] — каталог ссылок на ассеты от Дениса и что подходит игре
+- [[20_Domain/Market_Research_2026-11]] — архив: рынок Roblox
+- [[20_Domain/Asset_Sources]] — архив: ассеты Roblox от Дениса
 - [[30_Tech/Tech_Map]]
 - [[30_Tech/Codebase_Map]]
 - [[40_Decisions/Decision_Log]]
-- [[40_Decisions/2026-11-01_Rojo_GitHub_Pipeline]]
-- [[40_Decisions/2026-11-01_Game_Concept_Meteor_Rain]]
+- [[40_Decisions/2026-11-21_Pivot_Yandex_Games]] — смена направления на Яндекс Игры
+- [[10_Project/Archive_Roblox_2026-11]] — архив Roblox-версии
+- [[40_Decisions/2026-11-01_Rojo_GitHub_Pipeline]] — архив
+- [[40_Decisions/2026-11-01_Game_Concept_Meteor_Rain]] — архив
 - [[50_Meetings/Meeting_Log]]
 - [[60_Tasks/Task_Log]]
 - [[60_Tasks/System_Proposals]]

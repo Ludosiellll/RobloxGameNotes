@@ -55,7 +55,7 @@ Maintenance model: your project content is yours to grow; the OS layer (protocol
 | Placeholder | Meaning |
 | --- | --- |
 | `Денис` | The person who operates agents in this workspace |
-| `Игра в роблоксе` | The project this workspace serves |
+| `Игры для Яндекс Игр` | The project this workspace serves |
 | `n/a` | Client / main stakeholder (if any) |
 | `n/a` | Company or legal entity (if any) |
 | `D:\robloxgame` | Absolute path to this workspace folder |

@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This workspace is a markdown vault used as the durable project context for Игра в роблоксе.
+This workspace is a markdown vault used as the durable project context for Игры для Яндекс Игр.
 
 ## Recall gate (hard rule — read this first)
 

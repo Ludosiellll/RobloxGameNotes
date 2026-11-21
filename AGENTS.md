@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repository is a project context workspace (markdown vault) and the shared source of truth for AI agents working on Игра в роблоксе.
+This repository is a project context workspace (markdown vault) and the shared source of truth for AI agents working on Игры для Яндекс Игр.
 
 ## Start Here
 

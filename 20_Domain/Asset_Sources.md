@@ -1,6 +1,6 @@
 ---
 type: resource
-status: active
+status: deprecated
 updated: 2026-11-06
 tags:
   - assets
@@ -8,6 +8,9 @@ tags:
 ---
 
 # Источники ассетов для «Метеоритного дождя»
+
+> [!note] Архив
+> Относится к Roblox-версии, закрытой 2026-11-21: [[40_Decisions/2026-11-21_Pivot_Yandex_Games]], [[10_Project/Archive_Roblox_2026-11]].
 
 Денис прислал 2026-11-06 каталог из 105 ссылок: [[20_Domain/sources/Roblox_Source_Catalog.csv]]. Это только ссылки на DevForum, Creator Store и GitHub, файлов в каталоге нет. Ни одна ссылка не проверена, лицензии не указаны. Сайты Roblox из облачной сессии Claude не открываются, поэтому брать материал нужно Денису через Toolbox и DevForum, а потом загружать в релиз `raw-assets`. Там Claude проверит его на бэкдоры, как остальные паки.
 

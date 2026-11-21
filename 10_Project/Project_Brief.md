@@ -1,7 +1,7 @@
 ---
 type: project
 status: draft
-updated: 2026-11-01
+updated: 2026-11-21
 tags:
   - project/brief
 ---
@@ -10,35 +10,36 @@ tags:
 
 ## Summary
 
-Создаем игру в роблоксе, чтобы максимально заработать и раскрутить ее
+Делаем HTML5-игры для каталога Яндекс Игры, чтобы зарабатывать на рекламе и внутриигровых покупках. Направление выбрано 2026-11-21 вместо Roblox ([[40_Decisions/2026-11-21_Pivot_Yandex_Games]], история Roblox — [[10_Project/Archive_Roblox_2026-11]]).
 
 ## Why the project exists
 
-- The business problem it solves.
-- What happens if it is not built.
+- Денис хочет зарабатывать на играх. Яндекс Игры платят разработчику долю дохода от рекламы и покупок; игры работают в браузере, их можно собирать и проверять целиком в облаке без программ на ПК.
 
 ## Users and stakeholders
 
-- Who uses it, who pays for it, who accepts it.
-- Decision-makers: see [[01_Index/People]].
+- Игроки каталога Яндекс Игр (телефон и компьютер, русский, английский, турецкий).
+- Денис — владелец, принимает решения и публикует игры в консоли. Claude пишет и проверяет игры.
 
 ## Main scenarios
 
-- Scenario 1 ...
-- Scenario 2 ...
+- Claude делает игру, собирает архив и скриншоты, присылает в чат.
+- Денис загружает архив в консоль Яндекс Игр, проходит модерацию, присылает цифры из консоли.
+- Claude улучшает игру по цифрам (время в игре, возвраты, доход).
 
 ## Constraints
 
 - Do not store secrets, tokens, passwords or private customer data in notes.
-- Legal/contractual constraints (contracts, NDA, data residency) — record them here as soon as they are known.
-- Technical constraints (environments, access, sandboxes).
+- Требования модерации Яндекс Игр: `docs/PUBLISH.md` в `RobloxGame`, первоисточник https://yandex.ru/dev/games/doc/ru/concepts/requirements.
+- Права на все материалы игры — наши или с разрешением (пункт 3.5 требований); интерактивный ИИ в играх запрещён (1.23).
+- У Дениса только веб-версия Claude, программ на ПК для разработки нет.
 
 ## Where truth lives
 
-- Code: GitHub `Ludosiellll/RobloxGame`, ветка `main` (см. [[30_Tech/Codebase_Map]]).
-- Documentation: links or paths to specs/requirements documents.
-- Task tracker: link or "this workspace, [[60_Tasks/Task_Log]]".
-- Communications: where decisions actually happen (calls, chats) and how they get captured here.
+- Code: GitHub `Ludosiellll/RobloxGame`, ветка `main` — игры для Яндекс Игр (см. [[30_Tech/Codebase_Map]]).
+- Documentation: документация Яндекс Игр https://yandex.ru/dev/games/doc/ru/ ; наши инструкции в `RobloxGame/docs`.
+- Task tracker: this workspace, [[60_Tasks/Task_Log]].
+- Communications: чат Дениса с Claude (веб-версия); решения фиксируются здесь.
 
 ## Links
 

@@ -1,6 +1,6 @@
 ---
 type: decision
-status: accepted
+status: deprecated
 updated: 2026-11-01
 tags:
   - decisions
@@ -8,6 +8,9 @@ tags:
 ---
 
 # 2026-11-01 Концепция игры: «Метеоритный дождь»
+
+> [!note] Архив
+> Относится к Roblox-версии, закрытой 2026-11-21: [[40_Decisions/2026-11-21_Pivot_Yandex_Games]], [[10_Project/Archive_Roblox_2026-11]].
 
 ## Context
 
