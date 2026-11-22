@@ -25,6 +25,7 @@ Agents check this section before editing anything. Keep it explicit and dated.
 ## Next steps
 
 - Денис: описать идею приложения.
+- Денис: удалить на GitHub ветку `roblox-archive`, черновик релиза и тег `raw-assets` в `RobloxGame` — из облака удаление веток и релизов запрещено (push удаления обрывается, `gh` не авторизован).
 - Claude: разобрать идею, предложить вариант реализации и план.
 
 ## Open questions
