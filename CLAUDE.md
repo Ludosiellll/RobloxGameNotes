@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This workspace is a markdown vault used as the durable project context for Новое приложение.
+This workspace is a markdown vault used as the durable project context for Макет.
 
 ## Recall gate (hard rule — read this first)
 

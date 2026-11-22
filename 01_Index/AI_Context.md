@@ -23,7 +23,7 @@ This note is the main entry point for Claude, Codex, Cursor and other assistants
 
 Keep this list short (10-20 dated bullets max). Newest facts on top of their topic; prune superseded lines during weekly maintenance.
 
-- 2026-11-22: Project: Новое приложение — приложение по идее Дениса; описание идеи ожидается. Прежние направления (Roblox, Яндекс Игры, поиск заработка) закрыты, их заметки удалены по просьбе Дениса — история только в git.
+- 2026-11-22: Project: «Макет» — 3D-приложение для дизайна интерьера и планировки (three.js, статическая страница; код в `Ludosiellll/RobloxGame`). Решение: [[40_Decisions/2026-11-22_Maket_3D_Design_App]]. Прежние направления (Roblox, Яндекс Игры, поиск заработка) закрыты, их заметки удалены — история только в git.
 - User: Денис operates the AI agents in this workspace; working preferences: [[01_Index/User_Working_Profile]].
 - The main goal of this workspace: find context fast and keep a connected knowledge graph.
 - YYYY-MM-DD: the workspace runs as a layered AI operating system: this vault is the canonical source of truth, a semantic memory index is an optional retrieval layer, agents follow recall -> read -> challenge -> act -> verify -> capture. Shared protocol: [[70_Resources/Agent_Workflow_Protocol]]. Memory runbook: [[70_Resources/MGI_Mind_Local_Setup_Template]].

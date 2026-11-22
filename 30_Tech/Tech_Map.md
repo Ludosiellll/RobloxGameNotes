@@ -1,34 +1,35 @@
 ---
 type: tech
 status: draft
-updated: 2026-11-01
+updated: 2026-11-22
 tags:
   - tech/map
 ---
 
 # Tech Map
 
-Technical map of Новое приложение: architecture, components, integrations, environments, tools. Implemented reality lives in [[30_Tech/Codebase_Map]]; this note holds the architecture-level picture.
+Technical map of Макет: architecture, components, integrations, environments, tools. Implemented reality lives in [[30_Tech/Codebase_Map]]; this note holds the architecture-level picture.
 
 ## Architecture
 
-- Working architecture (e.g. API + database + SPA + background workers).
-- Mark clearly what is confirmed versus what is a draft to validate with the team.
+- 2026-11-22: «Макет» — статическое веб-приложение без сервера. Проект — неизменяемый документ; 3D-сцена и интерфейс только отображают его и меняют через чистые функции. Решение: [[40_Decisions/2026-11-22_Maket_3D_Design_App]].
+- Данные пользователя живут в его браузере: проект — в localStorage, загруженные модели — в IndexedDB.
 
 ## Main components
 
-- Component 1 — purpose.
-- Component 2 — ...
+- TypeScript 7, Vite 8, Vitest 5, three.js 0.187, fflate (ZIP). Без UI-фреймворка.
+- Playwright с Chromium из окружения — снимки и сквозные проверки (WebGL через SwiftShader).
 
 ## Integrations
 
-- External API 1: access model (sandbox/read-only/production), status.
-- Record what each integration can and cannot provide — API facts versus business methodology.
+- Артефакт Claude: возможность `downloads` для сохранения снимка. Других внешних сервисов нет.
+- Kenney Furniture Kit (CC0) — встроенный каталог; скачан с kenney.nl 2026-11-22.
+- В планах: GLM 5.3 Flash (ключ у Дениса) или возможность артефакта `sample` для ИИ-функций; Sketchfab Download API для загрузки по ссылке (нужен вход пользователя).
 
 ## Environments
 
-- Local: how to run it.
-- Staging/Prod: where they live, who has access.
+- Облако Claude: сборка и все проверки.
+- Прод: страница-артефакт https://claude.ai/artifact/NgcHBnQear7TN4EJX86QRH (приватная). Позже — программа для Windows.
 
 ## Tools
 

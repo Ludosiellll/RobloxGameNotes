@@ -8,7 +8,7 @@ tags:
 
 # Domain Map
 
-The business domain of Новое приложение: concepts, rules, scenarios, risks. Terms with precise definitions go to [[01_Index/Glossary]]; this note explains how they connect.
+The business domain of Макет: concepts, rules, scenarios, risks. Terms with precise definitions go to [[01_Index/Glossary]]; this note explains how they connect.
 
 ## Core concepts
 

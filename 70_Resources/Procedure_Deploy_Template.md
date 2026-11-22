@@ -12,7 +12,7 @@ tags:
 
 ## Summary
 
-Deploy procedure for Новое приложение. Fill it in after your first real deploy and update it after every one — a deploy runbook that does not match reality is worse than none.
+Deploy procedure for Макет. Fill it in after your first real deploy and update it after every one — a deploy runbook that does not match reality is worse than none.
 
 Main risk pattern: a publicly reachable environment with real data must never run on default credentials or weak secrets.
 

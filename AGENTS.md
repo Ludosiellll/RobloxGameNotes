@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This repository is a project context workspace (markdown vault) and the shared source of truth for AI agents working on Новое приложение.
+This repository is a project context workspace (markdown vault) and the shared source of truth for AI agents working on Макет.
 
 ## Start Here
 

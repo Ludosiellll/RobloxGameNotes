@@ -12,7 +12,8 @@ Single place for tasks, questions and follow-ups that matter for context. Keep A
 
 ## Active
 
-- [ ] Денис: описать идею приложения; Claude: разобрать и предложить план.
+- [ ] Денис: попробовать первую версию «Макета» и дать замечания.
+- [ ] Claude: exe для Windows; подложка с планом квартиры; проект файлом (см. [[10_Project/Current_Focus]]).
 - [ ] Fill the four seed notes (Project_Brief, Current_Focus, Tech_Map, People) — see TEMPLATE_SETUP.
 - [ ] Run baseline behavior evals E01/E05/E13 in fresh agent sessions and record results in [[70_Resources/AI_OS_Eval_Run_Log]].
 - [ ] Decide on workspace backup/remote (private git remote or scheduled backup) — a single local copy of the source of truth is a real risk.
@@ -24,6 +25,7 @@ Single place for tasks, questions and follow-ups that matter for context. Keep A
 ## Done
 
 - [x] YYYY-MM-DD: workspace created from the AI OS template.
+- [x] 2026-11-22: первая версия «Макета» собрана, проверена и опубликована артефактом (код `1203461`).
 - [x] 2026-11-22: прежние направления закрыты; их заметки и код удалены по просьбе Дениса (история — в git).
 
 ## Links

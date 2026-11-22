@@ -14,6 +14,7 @@ Registry of decisions. Every significant decision gets its own note in this fold
 | Date | Decision | Status | Link |
 | --- | --- | --- | --- |
 | YYYY-MM-DD | Use this workspace as the canonical source of truth for AI agents; memory layers are retrieval only | accepted | (create an ADR from the template) |
+| 2026-11-22 | «Макет»: своё 3D-приложение для дизайна интерьера на three.js (не форк Pascal Editor); комнаты-прямоугольники; вид «макет на макетном коврике» | accepted | [[40_Decisions/2026-11-22_Maket_3D_Design_App]] |
 
 ## Rule
 

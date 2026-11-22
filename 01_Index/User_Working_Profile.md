@@ -29,6 +29,7 @@ Replace the examples with what is true for you:
 
 ## Design Preferences (if the project has UI)
 
+- 2026-11-22: интерфейс должен выглядеть «максимально не иишно» и «очень круто»: без шаблонных тёмных панелей, градиентов и стекла. Для «Макета» выбран вид макетной мастерской (см. решение 2026-11-22).
 - Example: dislikes generic AI-looking UI — dark template dashboards, gratuitous gradients, glassmorphism, decorative effects without meaning.
 - Example: data displays must carry honest labels: real vs demo data, source, verification status.
 
