@@ -12,8 +12,8 @@ Single place for tasks, questions and follow-ups that matter for context. Keep A
 
 ## Active
 
-- [ ] Денис: попробовать «Макет» 0.2.1 (страница или программа для Windows) и дать замечания.
-- [ ] Claude: рисование комнаты по плану, диагональные стены, ИИ-помощник (см. [[10_Project/Current_Focus]]).
+- [ ] Денис: попробовать «Макет» 0.3.0 (страница или программа для Windows), пройти обучение и дать замечания.
+- [ ] Claude: диагональные стены, больше моделей, стили для наборов мебели (см. [[10_Project/Current_Focus]]).
 - [ ] Fill the four seed notes (Project_Brief, Current_Focus, Tech_Map, People) — see TEMPLATE_SETUP.
 - [ ] Run baseline behavior evals E01/E05/E13 in fresh agent sessions and record results in [[70_Resources/AI_OS_Eval_Run_Log]].
 - [ ] Decide on workspace backup/remote (private git remote or scheduled backup) — a single local copy of the source of truth is a real risk.
