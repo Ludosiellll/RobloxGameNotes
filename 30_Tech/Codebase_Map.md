@@ -20,7 +20,7 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 
 ## Structure of the product repo
 
-Проверено на коммите `fa0f6fe` (2026-11-22).
+Проверено на коммите `768f74c` (2026-11-22).
 
 - `src/core/` — чистая логика без 3D, вся под тестами:
   - `doc.ts` — проект как неизменяемый документ (комнаты, стены, проёмы, предметы, свет, коврик) и все операции над ним; `sanitizeDoc` чинит сохранённое;
@@ -29,12 +29,13 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
   - `geom.ts` — привязка к сетке и стенам, границы комнаты, авто-масштаб импорта, свет по времени суток;
   - `importPick.ts` — выбор главного файла модели из набора или архива, поиск текстур;
   - `underlay.ts` — план квартиры на коврике: размер с учётом поворота, попадание точки, масштаб по двум точкам (`calibrate`); сама подложка хранится в `doc.scene.underlay`;
+  - `orphans.ts` — какой предмет считать оставшимся без модели (`isOrphan`); `dropItems` в `doc.ts` их убирает;
   - `projectFile.ts` — описание файла проекта (`maket.json`): что в него попадает, проверка и починка при чтении, безопасные пути внутри архива;
   - `catalog.ts` (124 модели с русскими и английскими названиями), `kit-data.json` (размеры и превью, создаётся `npm run thumbs`), `palette.ts` (веер цветов), `i18n.ts`, `starter.ts` (стартовая квартира).
 - `src/scene/` — three.js: `stage.ts` (рендер, камера, свет, кадр по требованию), `mat.ts` (коврик: сетка в шейдере, печать текстурой), `rooms.ts` (полы, стены с вырезами, двери и окна), `models.ts` (библиотека моделей, копии, перекраска), `importers.ts` (форматы), `view.ts` (предметы и лампы), `interact.ts` (выбор, перетаскивание, ручки комнат, клавиши, разметка масштаба плана), `underlay.ts` (картинка плана в сцене), `thumb.ts`.
 - `src/ui/` — `app.ts` (верхняя панель, каталог, панель свойств, приём файлов), `fandeck.ts` (веер цветов), `dom.ts`. `src/store.ts` — состояние и автосохранение (запись сразу при закрытии или сворачивании окна); `src/db.ts` — общее хранилище IndexedDB (`maket-db`, версия 2: `models` и `images`); `src/userModels.ts` — модели пользователя; `src/images.ts` — картинки планов (уменьшение до 2048 px, хранение); `src/projectFile.ts` — сборка и чтение архива проекта; `src/platform.ts` — сохранение файла (в артефакте через возможность `downloads`).
 - `assets/kit/*.glb` — исходники каталога; `npm run pack` → `public/models/kit.json` (GLB в base64 одним файлом); `public/draco/` — декодер сжатых glTF.
-- `scripts/`: `thumbs.mjs`, `pack.mjs`, `shots.mjs` (снимок), `e2e.mjs` (42 проверки в браузере), `artifact.mjs` (страница и список файлов для публикации), `serve.mjs`, `icon.mjs` (рисует значок программы), `desktop-check.mjs` (запускает собранную программу и проверяет, что сцена загрузилась).
+- `scripts/`: `thumbs.mjs`, `pack.mjs`, `shots.mjs` (снимок), `e2e.mjs` (51 проверка в браузере), `artifact.mjs` (страница и список файлов для публикации), `serve.mjs`, `icon.mjs` (рисует значок программы), `desktop-check.mjs` (запускает собранную программу и проверяет, что сцена загрузилась).
 - `desktop/` — программа для Windows: `main.cjs` (оболочка Electron), `icon.png`, `icon.ico`, `RELEASE_NOTES.md` (текст релиза). Настройки сборки — раздел `build` в `package.json`.
 - `public/fonts/` — шрифты и `fonts.css`; в страницу артефакта стили шрифтов вставляются прямо в разметку, файлы публикуются рядом.
 - `.github/workflows/`: `check.yml` (тесты и сборка), `release.yml` (программа для Windows и релиз).
@@ -42,7 +43,7 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 
 ## Commands
 
-- `npm install`, `npm test` (81 тест), `npm run build` (типы + сборка в `dist/`).
+- `npm install`, `npm test` (88 тестов), `npm run build` (типы + сборка в `dist/`).
 - `npm run e2e` — сквозная проверка собранного приложения в Chromium (Playwright из окружения, флаги SwiftShader в `scripts/serve.mjs`).
 - `node scripts/shots.mjs имя [--phone] [--eval "js"]` — снимок в `shots/`.
 - Программа: `npx electron-builder --linux dir --publish never`, затем `xvfb-run -a node scripts/desktop-check.mjs release/linux-unpacked/maket shots/desktop-check.png` — запуск той же оболочки под Linux со снимком окна. Выпуск для Windows: поднять версию (`npm version 0.1.2 --no-git-tag-version`), отправить в `main` — дальше `release.yml`. Состояние сборки без входа: `https://api.github.com/repos/Ludosiellll/RobloxGame/actions/runs`, шаги — `.../actions/runs/<id>/jobs`, итог проверки запуском — `.../check-runs/<id задания>/annotations`.
@@ -67,6 +68,11 @@ Map of repositories, modules, entry points, commands and gotchas. This is the im
 - 2026-11-22: выбранная вещь имеет приоритет при нажатии мышью (план квартиры под указателем тащится, даже если сверху мебель); щелчок без движения выбирает то, что под указателем (`Interact.pickAt`).
 - 2026-11-22: проверку страницы «как у пользователя» делает навык `artifact-emulator`: файлы публикации складываются в одну папку с `index.html` (страница из `artifact/maket.html` и файлы из `artifact/files.json`).
 - 2026-11-22: GitHub предупреждает, что `actions/checkout@v4` и `actions/setup-node@v4` рассчитаны на Node 20; сейчас они принудительно идут на Node 24 и работают. При следующей правке сборок проверить актуальные версии.
+- 2026-11-22: предметы без модели убираются поправкой `Store.amend` (`History.amend`), а не шагом истории: иначе «Отменить» застревает на состоянии с такими предметами и стирает «Вернуть». Пока свои модели не прочитаны из хранилища (`UserModels.state !== 'ok'`), их предметы не трогаются: раньше запуск при медленном или занятом IndexedDB стирал мебель и сохранял проект.
+- 2026-11-22: удаление своей модели в каталоге — это сначала правка проекта (убрать её предметы), потом `userModels.remove`; в проверках повторять тот же порядок.
+- 2026-11-22: всё из файла проекта считается недоверенным: картинка плана проходит `prepareImage` (не больше 2048 точек) и кладётся под новым ключом; ссылки моделей на отсутствующие файлы заменяются пустышкой (`offlineRef`), наружу запросов нет.
+- 2026-11-22: смена версии IndexedDB блокируется, пока другая вкладка держит старое соединение; запись в хранилище не должна держать интерфейс (`ImageStore.put` ждёт не дольше 1,5 с), а соединение закрывается после каждой операции (`src/db.ts`).
+- 2026-11-22: независимая проверка кода отдельным агентом после крупной порции работы нашла 7 настоящих ошибок, которых не ловили 81 тест и 42 проверки; каждую сначала воспроизводили проверкой, потом исправляли.
 - Capture verified bug patterns here after each diagnosis (see [[70_Resources/Procedure_Bug_Diagnosis_Loop]]).
 
 ## AI OS tools (this workspace)
