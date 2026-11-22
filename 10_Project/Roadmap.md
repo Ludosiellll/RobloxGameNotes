@@ -9,7 +9,7 @@ tags:
 
 # Roadmap
 
-Product/technical plan for Игры для Яндекс Игр. Mark clearly what is a plan versus what is implemented — agents must not present plans as facts.
+Product/technical plan for Новое приложение. Mark clearly what is a plan versus what is implemented — agents must not present plans as facts.
 
 ## Strategy
 

@@ -1,21 +1,19 @@
 ---
 type: domain
 status: draft
-updated: 2026-11-21
+updated: YYYY-MM-DD
 tags:
   - domain/map
 ---
 
 # Domain Map
 
-The business domain of Игры для Яндекс Игр: concepts, rules, scenarios, risks. Terms with precise definitions go to [[01_Index/Glossary]]; this note explains how they connect.
+The business domain of Новое приложение: concepts, rules, scenarios, risks. Terms with precise definitions go to [[01_Index/Glossary]]; this note explains how they connect.
 
 ## Core concepts
 
-- Яндекс Игры: каталог HTML5-игр в браузере; разработчик получает долю дохода от рекламы и покупок. Требования модерации — `docs/PUBLISH.md` в `RobloxGame`.
-- Ниши для заработка из Грузии без регистрации: [[20_Domain/Money_Niches_2026-11]].
-- Рынок Яндекс Игр на ноябрь 2026: [[20_Domain/Yandex_Games_Market_2026-11]].
-- Архив: рынок Roblox на ноябрь 2026 — [[20_Domain/Market_Research_2026-11]].
+- Concept 1 — what it means in this business, not in general.
+- Concept 2 — ...
 
 ## Business rules
 

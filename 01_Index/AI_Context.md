@@ -1,7 +1,7 @@
 ---
 type: index
 status: active
-updated: 2026-11-21
+updated: YYYY-MM-DD
 tags:
   - ai/context
   - index/core
@@ -23,8 +23,7 @@ This note is the main entry point for Claude, Codex, Cursor and other assistants
 
 Keep this list short (10-20 dated bullets max). Newest facts on top of their topic; prune superseded lines during weekly maintenance.
 
-- Project: Игры для Яндекс Игр — HTML5-игры для каталога Яндекс Игры ради дохода от рекламы и покупок (с 2026-11-21, [[40_Decisions/2026-11-21_Pivot_Yandex_Games]]).
-- 2026-11-21: код игр в `Ludosiellll/RobloxGame` (TypeScript + Vite); Claude собирает, тестирует и смотрит игры в браузере в облаке, Денис загружает архив в консоль Яндекс Игр. Roblox-версия (2026-11-01…21) — [[10_Project/Archive_Roblox_2026-11]].
+- 2026-11-22: Project: Новое приложение — приложение по идее Дениса; описание идеи ожидается. Прежние направления (Roblox, Яндекс Игры, поиск заработка) закрыты, их заметки удалены по просьбе Дениса — история только в git.
 - User: Денис operates the AI agents in this workspace; working preferences: [[01_Index/User_Working_Profile]].
 - The main goal of this workspace: find context fast and keep a connected knowledge graph.
 - YYYY-MM-DD: the workspace runs as a layered AI operating system: this vault is the canonical source of truth, a semantic memory index is an optional retrieval layer, agents follow recall -> read -> challenge -> act -> verify -> capture. Shared protocol: [[70_Resources/Agent_Workflow_Protocol]]. Memory runbook: [[70_Resources/MGI_Mind_Local_Setup_Template]].
