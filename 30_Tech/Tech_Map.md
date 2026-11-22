@@ -13,12 +13,14 @@ Technical map of Макет: architecture, components, integrations, environment
 ## Architecture
 
 - 2026-11-22: «Макет» — статическое веб-приложение без сервера. Проект — неизменяемый документ; 3D-сцена и интерфейс только отображают его и меняют через чистые функции. Решение: [[40_Decisions/2026-11-22_Maket_3D_Design_App]].
-- Данные пользователя живут в его браузере: проект — в localStorage, загруженные модели — в IndexedDB.
+- Данные пользователя живут в его браузере (в программе — в её профиле): проект — в localStorage, загруженные модели и картинка плана — в IndexedDB. Перенос между устройствами — файлом проекта (zip).
 
 ## Main components
 
 - TypeScript 7, Vite 8, Vitest 5, three.js 0.187, fflate (ZIP). Без UI-фреймворка.
 - Playwright с Chromium из окружения — снимки и сквозные проверки (WebGL через SwiftShader).
+- Программа для Windows: Electron 45.4.1 + electron-builder 26.18.0. Решение: [[40_Decisions/2026-11-22_Maket_Windows_Program]].
+- Шрифты лежат в проекте (`public/fonts`, лицензия OFL): интернет для них не нужен ни странице, ни программе.
 
 ## Integrations
 
@@ -28,8 +30,9 @@ Technical map of Макет: architecture, components, integrations, environment
 
 ## Environments
 
-- Облако Claude: сборка и все проверки.
-- Прод: страница-артефакт https://claude.ai/artifact/NgcHBnQear7TN4EJX86QRH (приватная). Позже — программа для Windows.
+- Облако Claude: сборка и все проверки, в том числе запуск оболочки программы под Linux (`xvfb-run`).
+- GitHub Actions (репозиторий публичный): `check` — тесты и сборка на каждую отправку в `main`; `release` — сборка, проверка запуском и выпуск программы для Windows при смене версии.
+- Прод: страница-артефакт https://claude.ai/artifact/NgcHBnQear7TN4EJX86QRH (приватная) и программа для Windows в релизах `Ludosiellll/RobloxGame`.
 
 ## Tools
 

@@ -10,7 +10,7 @@ tags:
 
 ## Summary
 
-«Макет» — 3D-приложение для дизайна интерьера и планировки: собрать свою квартиру из комнат, расставить мебель из каталога или свои модели, подобрать цвета и свет. Работает в браузере, позже — программой для Windows. Решение: [[40_Decisions/2026-11-22_Maket_3D_Design_App]].
+«Макет» — 3D-приложение для дизайна интерьера и планировки: собрать свою квартиру из комнат, расставить мебель из каталога или свои модели, подобрать цвета и свет. Работает в браузере (страница-артефакт Claude) и программой для Windows ([[40_Decisions/2026-11-22_Maket_Windows_Program]]). Решение: [[40_Decisions/2026-11-22_Maket_3D_Design_App]].
 
 ## Why the project exists
 
@@ -35,7 +35,7 @@ tags:
 
 ## Where truth lives
 
-- Code: `none yet`
+- Code: GitHub `Ludosiellll/RobloxGame`, ветка `main` (карта — [[30_Tech/Codebase_Map]])
 - Documentation: links or paths to specs/requirements documents.
 - Task tracker: link or "this workspace, [[60_Tasks/Task_Log]]".
 - Communications: where decisions actually happen (calls, chats) and how they get captured here.
